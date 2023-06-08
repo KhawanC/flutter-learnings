@@ -30,22 +30,38 @@ class Aplicativo extends StatelessWidget {
       ),
 
 
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text("Hello Word"),
-          Container(
-            padding: EdgeInsets.all(50),
-            color: Colors.green,
-            child: Text("Hello Container"),
+          Row(
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.green,
+                child: Text("Hello"),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.grey,
+                child: Text("Row"),
+              ),
+            ],
           ),
-          TextButton(
-            onPressed: () {},
-            style: ButtonStyle(
-              backgroundColor: MaterialStatePropertyAll(Colors.black),
-            ),
-            child: Text("Hello Click"),
+          Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.pink,
+            child: Text("Hello Column 2"),
+          ),
+          Container(
+            padding: EdgeInsets.all(20),
+            color: Colors.cyan,
+            child: Text("Hello Column"),
+          ),
+          Container(
+            padding: EdgeInsets.all(40),
+            color: Colors.yellow,
+            child: Text("Hello Column 3"),
           ),
         ],
       ),
