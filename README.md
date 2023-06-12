@@ -1,4 +1,4 @@
-# my_frist_app
+# alura_learnings
 
 A new Flutter project.
 
